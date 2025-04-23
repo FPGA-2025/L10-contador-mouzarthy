@@ -2,6 +2,7 @@ if [ -z "$1" ]; then
     echo "Erro: É preciso especificar o número do teste"
     exit 1
 fi
+
 iverilog -o tb *.v
 rm -f saida.out
 cp test/teste$1.txt teste.txt
